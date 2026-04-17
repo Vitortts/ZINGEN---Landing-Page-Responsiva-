@@ -1,0 +1,87 @@
+:root {
+    --text-color-primary: #F4F4F5;
+    --text-color-secondary: #A1A1AA;
+
+    --background-color: #09090B;
+
+    --stroke-color: #27272A;
+    --surface-color: #18181B;
+
+    --brand-color-primary: #F7B733;
+    --brand-color-secondary: #FC4B1A;
+    
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-default {
+    background-color: var(--text-color-primary);
+    color: var(--background-color);
+}
+
+.btn-outlined {
+    background-color: transparent;
+    color: var(--text-color-primary);
+    border: 1px solid var(--text-color-primary);
+    
+    text-decoration: none;
+}
+
+.btn-prices {
+    background-color: transparent;
+    color: var(--text-color-primary);
+    border: 1px solid var(--text-color-primary);
+    
+    text-decoration: none;
+    width: 279px;
+}
+
+.btn-prices2 {
+    background-color: var(--text-color-primary);
+    color: var(--background-color);
+    border: 1px solid var(--text-color-primary);
+    
+    text-decoration: none;
+    width: 279px;
+}
+
+.btn-store {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color-secondary);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+
+    width: 190px;
+    height: 56px;
+}
+
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 16px 32px;
+        font-size: 18px
+    }
+}
+
+
+

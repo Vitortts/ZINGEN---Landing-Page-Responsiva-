@@ -1,0 +1,131 @@
+#feature {
+    background-color: var(--background-color);
+    min-height: calc(100vh - 61px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px 24px;
+    gap: 24px;
+}
+
+.feature-content {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-feature {
+    background-color: var(--surface-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 20px;
+
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+
+    gap: 10px;
+}
+
+.box-feature1 {
+    background-color: var(--surface-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 20px;
+
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+
+    gap: 10px;
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    padding-bottom: 8px;
+}
+
+.infos-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-title {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 20px
+}
+
+.feature-paragrafo {
+    color: var(--text-color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.phone-feature {
+    display: none;
+}
+
+
+@media (min-width: 810px) {
+    #feature {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .feature-content {
+        max-width: 1550px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+    }
+    
+    .infos-feature {
+        margin: 24px;
+    }
+
+    .box-feature {
+        flex-direction: row;
+        max-width: 592px;
+        height: 400px;
+        align-items: center;
+        padding-left: 24px;
+    }
+
+    #box4-ajusted {
+        margin-left: 0;
+    }
+
+    .box-feature1 {
+        max-width: 280px;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .feature-title {
+        font-size: 32px
+    }
+
+    .feature-paragrafo {
+        max-width: 216px;
+    }
+
+    .phone-feature {
+        display: flex;
+        width: 380px;
+    }
+}
+
+
+
+
+

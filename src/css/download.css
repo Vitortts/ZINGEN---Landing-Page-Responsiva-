@@ -1,0 +1,123 @@
+#download {
+    background-color: var(--background-color);
+    min-height: calc(100vh - 61px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px 24px 0px 24px;
+    gap: 24px;
+    overflow-x: hidden; /* ← corta o que vazar lateralmente */
+}
+
+.box-download {
+    background-color: var(--surface-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 20px;
+
+    width: 327px;
+    height: 580px;
+
+    gap: 40px;
+    position: relative;
+}
+
+.div-text-download {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.subtitle-download {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--brand-color-primary)
+}
+
+.title-download {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.65vw, 3rem);
+    color: var(--text-color-primary);
+    max-width: 400px;
+}
+
+.text-download {
+    color: var(--text-color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+
+    width: 279px;
+}
+
+.buttons-download {
+    display: flex;
+    flex-direction: column; /* Para ficarem um ao lado do outro em telas maiores */
+    gap: 15px;
+}
+
+.icon-button {
+    width: 27px;
+    height: 32px;
+}
+
+.btn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    line-height: 1.2;
+}
+
+.text-button {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+}
+
+.app-button {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color-primary);
+}
+
+.image-download {
+    position: absolute; /* ← sai do fluxo flex */
+    bottom: -35px;
+    left: 42%;
+    
+    width: 275px;
+    height: auto;
+}
+
+@media (min-width: 810px) {
+    .box-download {
+        padding: 140px 42% 140px 80px; /* 500/1200 ≈ 42% */
+
+        width: min(1200px, 100%); /* ← nunca estoura o container */
+        height: 540px;
+    }
+
+    .text-download {
+        width: 640px;
+    }
+
+    .buttons-download {
+        flex-direction: row;
+    }
+
+    .image-download {
+        width: 580px;
+        height: auto;
+
+        bottom: -75px;
+        left: 62%;
+    }
+}
+
+@media (min-width: 810px) and (max-width: 1030px) {
+    .text-download {
+        width: 490px;
+    }
+}

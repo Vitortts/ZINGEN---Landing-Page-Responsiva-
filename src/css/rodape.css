@@ -1,0 +1,75 @@
+#rodape {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 48px 100px;
+    gap: 48px;
+}
+
+.rodape-logo {
+    width: 84px;
+}
+
+.rodape-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rodape-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;   /* remove bullets */
+    padding-left: 0;    /* remove indentação padrão do browser */
+    
+}
+
+#rodape a {
+    color: var(--text-color-secondary);  /* força a cor nos filhos */
+    font-size: 16px;    /* ajusta aqui */
+    text-decoration: none; /* se tiver link, remove o sublinhado também */
+}
+
+.rodape-title {
+    color: var(--brand-color-primary);
+}
+
+.rodape-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rodape-redes {
+    display: flex;
+    gap: 20px;
+}
+
+.copy {
+    color: var(--text-color-secondary);
+}
+
+
+@media (min-width: 810px) { 
+    
+
+    .rodape-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rodape-logo {
+        
+        align-self: flex-start; /* ← isso aqui */
+    }
+
+    .rodape-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 80px 32px 32px 32px;
+    }
+
+
+}

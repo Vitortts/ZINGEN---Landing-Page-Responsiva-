@@ -1,0 +1,70 @@
+#app {
+    background-color: var(--background-color);
+    background-image: url(images/secapp/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    min-height: calc(100vh - 61px);
+    
+}   
+
+.app-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.app-image {
+    width: min(382px, 100%);
+}
+        
+.app-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-color-primary);
+}
+        
+.app-description {
+    color: var(--text-color-secondary);
+    font-size: 20px;
+}
+
+.app-actions {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+} 
+
+.app-phones {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 785px) {
+    #app {
+        background-image: 
+            url(images/secapp/bg-hero-desktop.svg);
+        background-position: bottom center;
+        background-size: 100% auto, cover;
+        padding-top: 9.5rem;
+    }
+
+    .app-title {
+        font-weight: 800;
+        
+    }
+
+    .app-description {
+        font-weight: 400;
+        font-size: 40px;
+    }
+    
+    .app-phones {
+        display: none;
+    }
+  
+}

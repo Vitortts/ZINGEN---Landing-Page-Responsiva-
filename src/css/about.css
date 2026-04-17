@@ -1,0 +1,63 @@
+#about {
+    background-color: var(--surface-color);
+    display: flex;
+    justify-content: center;
+    padding: 0 0 4rem 0;    
+}
+
+.about-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2rem 2.5rem;
+    gap: 8px;
+
+    width: min(550px, 90%);
+    margin: 0 auto; 
+}
+
+.about-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--brand-color-primary);
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.65vw, 3rem);
+    color: var(--text-color-primary);
+}
+
+.about-texto {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color-secondary);
+}
+
+.about-phones {
+    display: none;
+}
+
+@media (min-width: 810px) {
+    #about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 2rem; /* respiro vertical */
+    }
+
+    .about-div {
+        flex: 1; /* ocupa o espaço restante */
+        max-width: 680px;
+        padding: 0rem 2rem;
+    }
+
+    .about-phones {
+        display: flex;
+        width: min(780px, 45%);
+        height: auto;
+        flex-shrink: 0; /* não encolhe com o flex container */
+        object-fit: contain;
+    }
+    
+}
